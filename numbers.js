@@ -1,7 +1,7 @@
 var guessInput = document.getElementById("guess");
 var guess = parseInt(guessInput.value, 10);
 
-var random = Math.floor(Math.random() * 100) + 1;
+var random = 100;
 console.log(random);
 
 const check = document.getElementById("check").addEventListener("click", function checkelement() {

@@ -14,7 +14,7 @@ const check = document.getElementById("check").addEventListener("click", functio
         } else {
             document.getElementById("answer").innerHTML = "Ohh no! Try again.";
         }
-        random = Math.floor(Math.random() * 100) + 1;
+        random =100;
         console.log(random);
     } else {
         

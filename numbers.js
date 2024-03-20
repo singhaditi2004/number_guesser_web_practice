@@ -1,14 +1,11 @@
 var guessInput = document.getElementById("guess");
-var guess = parseInt(guessInput.value, 10);
 
-var random = Math.floor(Math.random() * 100) + 1;
-console.log(random);
-
-const check = document.getElementById("check").addEventListener("click", function checkelement() {
-    var guess = parseInt(guessInput.value, 10); 
+var hint ="दुख दर्द पीड़ा";
+document.getElementById("check").addEventListener("click", function checkelement() {
+    var guess =guessInput ; 
     console.log(guess);
 
-    if (!isNaN(guess)) {
+    
         if (guess === random) {
             document.getElementById("answer").innerHTML = "Yes! You guessed it right.";
         } else {
@@ -16,8 +13,5 @@ const check = document.getElementById("check").addEventListener("click", functio
         }
         random =Math.floor(Math.random() * 100) + 1;
         console.log(random);
-    } else {
-        
-        document.getElementById("answer").innerHTML = "Please enter a valid number.";
-    }
+    } 
 });

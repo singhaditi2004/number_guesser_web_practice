@@ -1,7 +1,7 @@
 var guessInput = document.getElementById("guess");
 var guess = parseInt(guessInput.value, 10);
 
-var random = 100;
+var random = Math.floor(Math.random() * 100) + 1;
 console.log(random);
 
 const check = document.getElementById("check").addEventListener("click", function checkelement() {
@@ -14,7 +14,7 @@ const check = document.getElementById("check").addEventListener("click", functio
         } else {
             document.getElementById("answer").innerHTML = "Ohh no! Try again.";
         }
-        random =100;
+        random =Math.floor(Math.random() * 100) + 1;
         console.log(random);
     } else {
         
